@@ -50,8 +50,13 @@ class API_Star_Wars(API_consumer):
         return self.__URL
 
     def extract(self, id):
+        URL = self.URL + str(id)
     # Atividade 4, que resultará o terceiro commit
-        pass
+        try:
+            dado = requests.get(URL).json()
+            return ((dado.get('name'), dado.get('films')))
+        except:
+            pass
 
 class API_Ice_and_Fire(API_consumer):
     ''' The universe of Ice And Fire '''
