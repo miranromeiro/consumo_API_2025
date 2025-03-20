@@ -28,9 +28,8 @@ print(40 * '*')
 etl.consume(1, API_Star_Wars())
 etl.consume(2, API_Star_Wars())
 
-'''
+
 print('\n\nConsumo da API Crônicas do Gelo e do Fogo')
 print(40 * '*')
 etl.consume(583, API_Ice_and_Fire())
 etl.consume(2, API_Ice_and_Fire())
-'''
